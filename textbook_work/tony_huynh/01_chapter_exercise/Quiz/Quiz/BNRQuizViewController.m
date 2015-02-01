@@ -10,28 +10,73 @@
 
 @interface BNRQuizViewController ()
 
+// View objects
+@property (nonatomic, weak) IBOutlet UILabel *questionLabel;
+@property (nonatomic, weak) IBOutlet UILabel *answerLabel;
+
+// Model objects
+@property (nonatomic) int currentQuestionIndex;
+@property (nonatomic, copy) NSArray *questions;
+@property (nonatomic, copy) NSArray *answers;
+
 @end
 
 @implementation BNRQuizViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+// Initialization
+- (instancetype) initWithNibName: (NSString*) nibNameOrNil
+                          bundle: (NSBundle*) nibBundleOrNil
+{
+    // Call the init method implemented by the superclass
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if(self){
+        // Create two arrays filled with questions and answers
+        // and make the pointers point to them
+        self.questions =    @[@"From what is cognac made?",
+                              @"What is 7+7?",
+                              @"What is the capital of Vermont?"];
+        
+        self.answers =      @[@"Grapes",
+                              @"14",
+                              @"Montpelier"];
+    }
+    
+    // Return the address of the new object
+    return self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+// Actions
+- (IBAction) showQuestion: (id)sender
+{
+
+    // Step to the next question
+    self.currentQuestionIndex++;
+    
+    // Check if the index has gone past the last question
+    if( self.currentQuestionIndex == [self.questions count] ){
+        // If so, return to the first question
+        self.currentQuestionIndex = 0;
+    }
+         
+    // Get the string at the current index
+    NSString *question = self.questions[self.currentQuestionIndex];
+    
+    // Display the string in the question label
+    self.questionLabel.text = question;
+    
+    // Reset the answer label
+    self.answerLabel.text = @"???";
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction) showAnswer: (id)sender
+{
+ 
+    // Get the answer to the current question & display it
+    NSString *answer = self.answers[self.currentQuestionIndex];
+    self.answerLabel.text  = answer;
+    
 }
-*/
 
 @end

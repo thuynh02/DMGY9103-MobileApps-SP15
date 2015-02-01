@@ -87,10 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				9A2FE50F1A7DA3FD000B33CD /* AppDelegate.h */,
+				9A2FE5101A7DA3FD000B33CD /* AppDelegate.m */,
 				9A2FE5311A7DA5B7000B33CD /* BNRQuizViewController.h */,
 				9A2FE5321A7DA5B7000B33CD /* BNRQuizViewController.m */,
 				9A2FE5331A7DA5B7000B33CD /* BNRQuizViewController.xib */,
-				9A2FE5101A7DA3FD000B33CD /* AppDelegate.m */,
 				9A2FE5121A7DA3FD000B33CD /* ViewController.h */,
 				9A2FE5131A7DA3FD000B33CD /* ViewController.m */,
 				9A2FE5151A7DA3FD000B33CD /* Main.storyboard */,
