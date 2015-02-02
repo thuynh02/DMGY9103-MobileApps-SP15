@@ -105,7 +105,7 @@ int main(int argc, const char * argv[]) {
         BNRItem *itemWithNameAndSerial = [[BNRItem alloc]
                                           initWithItemName: @"Silver"
                                           serialNumber: @"S1V3R"];
-//        NSLog( @"%@", itemWithNameAndSerial );
+        NSLog( @"\n\n---- Silver Challenge ----\n%@", itemWithNameAndSerial );
         
         
         
@@ -124,7 +124,7 @@ int main(int argc, const char * argv[]) {
                                        items: items];
         
         [goldContainer.items addObject:tinyContainer];
-        NSLog(@"%@", goldContainer);
+        NSLog(@"\n\n---- Gold Challenge ----\n%@", goldContainer);
         
         items = nil;
         
