@@ -75,7 +75,7 @@
     
     // Build the item list by iterating through the array and appending the
     // item descriptions
-    for( NSObject *item in _items ){
+    for( BNRItem *item in _items ){
         fullDesc = [fullDesc stringByAppendingString: @"\n"];
         fullDesc = [fullDesc stringByAppendingString: item.description];
     }

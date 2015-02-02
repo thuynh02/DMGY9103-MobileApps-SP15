@@ -9,11 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "BNRItem.h"
 
-@interface BNRContainer : NSObject
+@interface BNRContainer : BNRItem
 {
     NSMutableArray *_items;
     NSString *_containerName;
-    int _valueInDollars;
 }
 
 // ---------------------------------
