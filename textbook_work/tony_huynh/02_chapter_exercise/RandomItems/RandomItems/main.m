@@ -44,7 +44,7 @@ int main(int argc, const char * argv[]) {
 //        // [item setItemName:@"Red Sofa"];
 //        // [item setSerialNumber:@"A1B2C"];
 //        // [item setValueInDollars:100];
-//        
+//        //
 //        // NSLog( @"%@, %@, %@, $%d",
 //        //      [item itemName],
 //        //      [item dateCreated],
@@ -55,7 +55,7 @@ int main(int argc, const char * argv[]) {
 //        // item.itemName = @"Red Sofa";
 //        // item.serialNumber = @"A1B2C";
 //        // item.valueInDollars = 100;
-//        
+//        //
 //        // NSLog( @"%@, %@, %@, $%d",
 //        //      item.itemName,
 //        //      item.dateCreated,
@@ -89,6 +89,23 @@ int main(int argc, const char * argv[]) {
         for( BNRItem *item in items ){
             NSLog( @"%@", item );
         }
+        
+        
+        // ============= Bronze-challenge =============
+        // Note the exception when accessing the 11th item:
+        // Terminating app due to uncaught exception 'NSRangeException',
+        // reason:
+        //  '*** -[__NSArrayM objectAtIndex:]: index 11 beyond bounds [0 .. 9]'
+        //
+        // NSLog( @"%@", items[11] );
+        
+        
+        // ============= Silver Challenge =============
+        BNRItem *itemWithNameAndSerial = [[BNRItem alloc]
+                                          initWithItemName: @"Silver"
+                                          serialNumber: @"S1V3R"];
+        NSLog( @"%@", itemWithNameAndSerial );
+        
         
         items = nil;
         

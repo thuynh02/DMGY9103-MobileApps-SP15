@@ -56,6 +56,16 @@
     return self;
 }
 
+// ============= Silver Challenge =============
+// Another initializer that is given the itemName and serial number
+- (instancetype) initWithItemName: (NSString*) name
+                     serialNumber: (NSString*) sNumber
+{
+    return [ self initWithItemName: name
+                    valueInDollars: 0
+                      serialNumber: sNumber ];
+}
+
 // ---------------------------------
 // secondary initializer (uses the designated version)
 - (instancetype) initWithItemName: (NSString*) name
