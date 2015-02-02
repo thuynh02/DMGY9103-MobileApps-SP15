@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BNRItem.h"
+#import "BNRContainer.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -104,8 +105,26 @@ int main(int argc, const char * argv[]) {
         BNRItem *itemWithNameAndSerial = [[BNRItem alloc]
                                           initWithItemName: @"Silver"
                                           serialNumber: @"S1V3R"];
-        NSLog( @"%@", itemWithNameAndSerial );
+//        NSLog( @"%@", itemWithNameAndSerial );
         
+        
+        
+        // ============= Gold Challenge =============
+        NSMutableArray *moreItems = [[NSMutableArray alloc] init];
+        for( int i = 0; i < 2; ++i ){
+            BNRItem *item = [BNRItem randomItem];
+            [moreItems addObject: item];
+        }
+        BNRContainer *tinyContainer = [[BNRContainer alloc]
+                                       initWithContainerName:@"Tiny Container"
+                                       items: moreItems];
+        
+        BNRContainer *goldContainer = [[BNRContainer alloc]
+                                       initWithContainerName:@"Gold Container"
+                                       items: items];
+        
+        [goldContainer.items addObject:tinyContainer];
+        NSLog(@"%@", goldContainer);
         
         items = nil;
         
