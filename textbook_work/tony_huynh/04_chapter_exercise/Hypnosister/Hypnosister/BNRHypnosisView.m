@@ -50,6 +50,14 @@
     [[UIColor lightGrayColor] setStroke];
     
     [path stroke];
+    
+    // Bronze challenge: logo png
+    UIImage *logoImage = [UIImage imageNamed:@"bnr_logo.png"];
+    CGRect logoContainer = CGRectMake(center.x - (logoImage.size.width/4),
+                                      center.y - (logoImage.size.height/4),
+                                      logoImage.size.width/2,
+                                      logoImage.size.height/2);
+    [logoImage drawInRect:logoContainer];
 }
 
 @end

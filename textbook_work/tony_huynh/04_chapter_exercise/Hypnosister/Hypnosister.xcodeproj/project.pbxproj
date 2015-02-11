@@ -15,6 +15,7 @@
 		9A2CD0B11A8AF06400BC5F7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A2CD0AF1A8AF06400BC5F7F /* LaunchScreen.xib */; };
 		9A2CD0BD1A8AF06400BC5F7F /* HypnosisterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2CD0BC1A8AF06400BC5F7F /* HypnosisterTests.m */; };
 		9A2CD0C81A8AF07D00BC5F7F /* BNRHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2CD0C71A8AF07D00BC5F7F /* BNRHypnosisView.m */; };
+		9A2CD0D21A8B04DD00BC5F7F /* bnr_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A2CD0D11A8B04DD00BC5F7F /* bnr_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		9A2CD0BC1A8AF06400BC5F7F /* HypnosisterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnosisterTests.m; sourceTree = "<group>"; };
 		9A2CD0C61A8AF07D00BC5F7F /* BNRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisView.h; sourceTree = "<group>"; };
 		9A2CD0C71A8AF07D00BC5F7F /* BNRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnosisView.m; sourceTree = "<group>"; };
+		9A2CD0D11A8B04DD00BC5F7F /* bnr_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bnr_logo.png; path = ../../bnr_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		9A2CD09F1A8AF06400BC5F7F /* Hypnosister */ = {
 			isa = PBXGroup;
 			children = (
+				9A2CD0D11A8B04DD00BC5F7F /* bnr_logo.png */,
 				9A2CD0A41A8AF06400BC5F7F /* AppDelegate.h */,
 				9A2CD0A51A8AF06400BC5F7F /* AppDelegate.m */,
 				9A2CD0A71A8AF06400BC5F7F /* ViewController.h */,
@@ -207,6 +210,7 @@
 			files = (
 				9A2CD0AC1A8AF06400BC5F7F /* Main.storyboard in Resources */,
 				9A2CD0B11A8AF06400BC5F7F /* LaunchScreen.xib in Resources */,
+				9A2CD0D21A8B04DD00BC5F7F /* bnr_logo.png in Resources */,
 				9A2CD0AE1A8AF06400BC5F7F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
