@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>9E01FD9C-D1ED-481F-8653-6EF69A00A862</string>
+	<string>91B01A2F-26FD-42E1-AF0C-07F096EC8E36</string>
 	<key>IDESourceControlProjectName</key>
-	<string>RandomItems</string>
+	<string>Hypnosister</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>17B896449DBD7FEF966C16F8C168EDB445C4FA07</key>
 		<string>https://github.com/thuynh02/DMGY9103-MobileApps-SP15</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>textbook_work/tony_huynh/03_chapter_exercise/RandomItems.xcodeproj</string>
+	<string>textbook_work/tony_huynh/04_chapter_exercise/Hypnosister/Hypnosister.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>17B896449DBD7FEF966C16F8C168EDB445C4FA07</key>
-		<string>../../../../..</string>
+		<string>../../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/thuynh02/DMGY9103-MobileApps-SP15</string>
