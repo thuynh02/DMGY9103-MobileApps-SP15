@@ -1,0 +1,73 @@
+
+At least 8 possible features (brainstorm)
+Three target audience charateristics
+3 selected features
+App Definition Statement
+Rough sketch of one main screen from the app
+
+1. Event Management (Ping!)
+	
+	-> 8 Possible Features
+		= Add friends
+		= Form groups
+		= Arrange meetings (time & location with whom to attend with)
+		= 'Ping' for your arrival / your friend's location
+		= Show map and friends who are 'pinging'
+		= 'Ping' when you're late - send expected arrival time using google map
+		= Calendar for quick event arrangment
+		= Sync with google calendar
+
+	-> 3 target audience characteristics
+		= They hang out with friends often
+		= Data-plan & location tracking on their phone/smart device
+		= Lack a sense of direction
+
+	-> 3 selected features
+		= Add friends
+		= Arrange meetings
+		= Ping for your arrival / your friend's location
+
+	-> App Definition Statement
+		= Effortless event management and planning for friends
+
+
+2. Online pen pals
+
+	-> 8 Possible Features
+		= Find pen pal(s) based on filter (language, hobbies, etc)
+		= Group chat
+		= Intentional message delay to emulate 'distance' (with tracking)
+			- Might lead to more in-depth messages and stray away from 'Hello'
+		= User profile
+		= Send photos and videos
+		= Customize message format (background, font, color, etc)
+		= Pen Pal ranking/flagging to mitigate 'trolls' or toxic participants
+		= Random assignment based on provided preferences and language
+
+	-> 3 target audience characteristics
+		= Active texters who want something more than idle chat
+		= People who have had pen pals in the past
+		= Generally friendly people who want to expand their circle with people from other places
+
+	-> 3 selected features
+		= Find pen pal(s) based on filter
+		= Pen pal ranking/flagging
+		= Intentional message delay w/ message tracking
+
+	-> App definition statement
+		= Reviving the pen pal practice with modern age tech
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
