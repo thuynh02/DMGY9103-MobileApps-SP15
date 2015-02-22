@@ -1,67 +1,38 @@
 //
 //  AppDelegate.m
-//  Hypnosister
+//  HypnoNerd
 //
-//  Created by Tony H on 2/10/15.
+//  Created by Tony H on 2/15/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "BNRHypnosisView.h"
+#import "BNRHypnosisViewController.h"
+#import "BNRReminderViewController.h"
 
-@interface AppDelegate () <UIScrollViewDelegate>
-
-@property (nonatomic) BNRHypnosisView *hypnosisView;
-
+@interface AppDelegate ()
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds] ];
+    BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
+    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] init];
     
-//    CGRect firstFrame = self.window.bounds;
-//    BNRHypnosisView *firstView = [[BNRHypnosisView alloc] initWithFrame:firstFrame];
-//    [self.window addSubview:firstView];
-
-    // create cgrects for frames
-    CGRect screenRect = self.window.bounds;
-    CGRect bigRect = screenRect;
-    bigRect.size.width *= 2.0;
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[hvc, rvc];
     
-    // screen-sized scroll view
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
-//    scrollView.pagingEnabled = YES;
-    
-    [self.window addSubview:scrollView];
-    
-//    // super-sized hypnosis view added to scroll view
-//    BNRHypnosisView *hypnosisView = [[BNRHypnosisView alloc] initWithFrame:bigRect];
-//    [scrollView addSubview:hypnosisView];
-
-    // screen-sized hypnosis view
-    self.hypnosisView = [[BNRHypnosisView alloc] initWithFrame:screenRect];
-    [scrollView addSubview: self.hypnosisView];
-    
-    // CH07 SILVER CHALLENGE
-    scrollView.delegate = self;
-    scrollView.maximumZoomScale = 2.0;
-    scrollView.minimumZoomScale = 1.0;
-    
-    // second screen-sized hypnosis view off screen to the right
-//    screenRect.origin.x += screenRect.size.width;
-//    BNRHypnosisView *anotherView = [[BNRHypnosisView alloc] initWithFrame:screenRect];
-//    [scrollView addSubview:anotherView];
-    
-    // inform scroll view of content area size
-    scrollView.contentSize = bigRect.size;
-    
+    self.window.rootViewController = tabBarController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    // Thanks Matias! Your link worked great
+    [application registerUserNotificationSettings:[UIUserNotificationSettings
+                                                   settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
     return YES;
 }
 
@@ -85,12 +56,6 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-}
-
-- (BNRHypnosisView*) viewForZoomingInScrollView: (UIScrollView *) scrollView
-{
-    NSLog( @"zooming");
-    return self.hypnosisView;
 }
 
 @end
