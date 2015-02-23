@@ -42,7 +42,7 @@
     return self;
 }
 
--(NSArray *) allItems{
+-(NSArray *)allItems{
     return [self.privateItems copy];
 }
 
