@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C0341E41-9698-469E-8FD8-13682BDDDF05</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Homepwner</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>17B896449DBD7FEF966C16F8C168EDB445C4FA07</key>
+		<string>https://github.com/thuynh02/DMGY9103-MobileApps-SP15</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>textbook_work/tony_huynh/10_chapter_exercise/Homepwner/Homepwner.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>17B896449DBD7FEF966C16F8C168EDB445C4FA07</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/thuynh02/DMGY9103-MobileApps-SP15</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>17B896449DBD7FEF966C16F8C168EDB445C4FA07</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>17B896449DBD7FEF966C16F8C168EDB445C4FA07</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DMGY9103-MobileApps-SP15</string>
+		</dict>
+	</array>
+</dict>
+</plist>
